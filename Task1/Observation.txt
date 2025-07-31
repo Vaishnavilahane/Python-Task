@@ -1,0 +1,37 @@
+---Overall Observation and insights---
+
+1. Strong correlation between Size and Rent
+    -Pearson correlation coefficient: 0.95 between apartment size and rent, 
+    indicating a very strong positive linear relationship.
+    -Larger apartments almost always cost more, confirming size as the most 
+    influential feature for predicting rent.
+
+2.Moderate correlation between bedrooms and Rent
+    -Correlation between number of bedrooms and rent is about 0.68, suggesting 
+    that while the number of rooms matters, it is less impactful than size.
+    -It may act as a supporting feature rather than a primary driver.
+
+3.Location Greatly Affects Rent Prices
+    -Even for apartments of similar size, the rent varies across cities:
+        *Kolkata, Ahmedabad, and Chennai consistently show higher rents.
+        *Bangalore, Hyderabad, and Pune show relatively affordable options.
+    -This confirms that location acts as a categorical multiplier on rent pricing.
+
+4.Linear Trend Across Cities
+    -The scatter plot (Size vs Rent) shows a consistent upward trend across all cities, 
+    supporting the use of a linear regression model.
+    -Most data points lie along a diagonal line, strengthening confidence in the model.
+
+5.Outliers and Premium Properties
+    -A few apartments, especially those over 1600–1800 sq.ft, show disproportionately high rents, possibly due to:
+        -Premium locations
+        -Luxurious furnishing
+        -Added amenities
+    -These outliers should be handled carefully in model training to avoid bias.
+
+
+--Conclusion
+1.Apartment size is the most important predictor of rent.
+2.Location adds significant variance and must be encoded properly.
+3.A simple linear regression will work well as a baseline, and can be improved with more features or interaction terms.
+
